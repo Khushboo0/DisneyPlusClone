@@ -10,7 +10,30 @@ export const Header = () => {
             <img src="/images/home-icon.svg" alt="home"/>
             <span>HOME</span>
         </a>
+        <a>
+            <img src="/images/search-icon.svg" alt="home"/>
+            <span>SEARCH</span>
+        </a>
+        <a>
+            <img src="/images/watchlist-icon.svg" alt="home"/>
+            <span>WATCHLIST</span>
+        </a>
+        <a>
+            <img src="/images/original-icon.svg" alt="home"/>
+            <span>ORIGINALS</span>
+        </a>
+        <a>
+            <img src="/images/movie-icon.svg" alt="home"/>
+            <span>MOVIES</span>
+        </a>
+        <a>
+            <img src="/images/series-icon.svg" alt="home"/>
+            <span>SERIES</span>
+        </a>
       </Navmenu>
+      <Login>
+        LOGIN
+      </Login>
     </Nav>
   );
 };
@@ -99,5 +122,20 @@ const Navmenu = styled.div`
 
   @media (max-width: 768px) {
     display: none;
+  }
+`;
+const Login = styled.a`
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 8px 16px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  border: 1px solid #f9f9f9;
+  border-radius: 4px;
+  transition: all 0.2s ease 0s;
+
+  &:hover {
+    background-color: #f9f9f9;
+    color: #000;
+    border-color: transparent;
   }
 `;
